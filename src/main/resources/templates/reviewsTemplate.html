@@ -1,0 +1,23 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Top Force Users</title>
+</head>
+<body>
+
+<header>
+    <h1>A Ranking Of My Favorite Force Users</h1>
+</header>
+
+<main>
+    <ul>
+        <li th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}"  th:text="${review.title}"></a></li>
+    </ul>
+</main>
+
+<footer>
+    <small>&copy WCCI 2021</small>
+</footer>
+
+</body>
+</html>
