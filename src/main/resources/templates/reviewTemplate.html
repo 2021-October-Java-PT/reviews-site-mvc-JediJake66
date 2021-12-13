@@ -1,20 +1,21 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title th:text="${reviewModel.name}">A review</title>
+    <title th:text="${reviewModel.title}">A review</title>
 </head>
 <body>
 
 <header>
-    <h1 th:text="${reviewModel.name}">A Review</h1>
+    <h1 th:text="${reviewModel.title}">A Review</h1>
 </header>
 
 <main>
     <ul>
         <p><a href="/reviews">Reviews</a></p>
-        <li th:text="${reviewModel.name}"></li>
+        <li th:text="${reviewModel.title}"></li>
     </ul>
     <h2 th:text="${reviewModel.description}"></h2>
+    <img src="" alt="lego falcon">
 </main>
 
 <footer>

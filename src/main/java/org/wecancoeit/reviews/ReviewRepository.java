@@ -11,9 +11,15 @@ public class ReviewRepository {
 
     Map<Long, Review> reviewList = new HashMap<>();
 
+    public ReviewRepository(){
+        Review numberOne = new Review(1L,"Millenium Falcon","","Lego", "This is a Lego set", "This set if from rise of skywalker and took 16 hours to build" );
+
+        reviewList.put(numberOne.getId(), numberOne);
+    }
 
 
-    //gonna need a proper constructor later
+
+
     public ReviewRepository(Review ...reviewsToAdd) {
         for(Review review: reviewsToAdd){
             reviewList.put(review.getId(), review);
