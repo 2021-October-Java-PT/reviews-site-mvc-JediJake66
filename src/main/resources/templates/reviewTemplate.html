@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+    <link rel="stylesheet" href="/styles/reviewStyle.css">
     <title th:text="${reviewModel.title}">A review</title>
 </head>
 <body>
@@ -11,11 +12,12 @@
 
 <main>
     <ul>
-        <p><a href="/reviews">Reviews</a></p>
-        <li th:text="${reviewModel.title}"></li>
+        <p><a href="/reviews">Home</a></p>
+        <li th:text="${reviewModel.reviewCategory}"></li>
     </ul>
-    <h2 th:text="${reviewModel.description}"></h2>
-    <img src="" alt="lego falcon">
+    <h3 th:text="${reviewModel.description}"></h3>
+    <img th:src="${reviewModel.imageUrl}" alt="picture of lego set">
+    <h3 th:text="${reviewModel.content}"></h3>
 </main>
 
 <footer>
