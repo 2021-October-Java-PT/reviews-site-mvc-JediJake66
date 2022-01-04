@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="/styles/reviewsStyle.css">
+    <title>Lego Star Wars</title>
+</head>
+<body>
+
+<header>
+    <h1>Short Reviews Of My Favorite Star Wars Lego Sets</h1>
+</header>
+
+<main>
+    <ul>
+        <li th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}"  th:text="${review.title}"></a></li>
+    </ul>
+</main>
+
+<footer>
+    <small>&copy WCCI 2021</small>
+</footer>
+
+</body>
+</html>
