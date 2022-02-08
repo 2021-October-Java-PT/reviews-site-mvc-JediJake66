@@ -33,6 +33,9 @@ a {
   font-style: bold;
 }
 
-ul {
-  text-decoration: none;
+.legoImg {
+display: grid;
+justify-content: center;
 }
+
+
