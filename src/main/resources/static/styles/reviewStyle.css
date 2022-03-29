@@ -21,21 +21,36 @@ header {
   justify-content: space-around;
 }
 
-img {
-  display: flex;
-  justify-content: center;
-  height: auto;
-  max-width: 25%;
-}
-
 a {
   text-decoration: none;
   font-style: bold;
 }
 
 .legoImg {
-display: grid;
-justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  max-width: 25%;
 }
 
-
+.review_container {
+  padding-top: 3%;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: black;
+  margin: 2rem auto;
+  max-width: 90%;
+  width: auto;
+  -webkit-box-shadow: 4px 17px 31px -14px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 17px 31px -14px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 17px 31px -14px rgba(0, 0, 0, 0.75);
+  height: 800px, auto;
+  padding-bottom: 6rem;
+  list-style: none;
+}
+footer {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+}
